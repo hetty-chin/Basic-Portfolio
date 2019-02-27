@@ -12,7 +12,7 @@
     <body>  
             <div class="MainBody">
     
-                <div class="HeaderBody">
+                <div class="HeaderBody" id="myHeader" style="left: 0px;">
                     <div class="clearfix">
                         <div class="HeaderNav">
                             <h1 class="MyName">Hetty Chin</h1>
@@ -63,4 +63,18 @@
     
             </footer>  
             </div>
+            <script>
+                window.onscroll = function() {myFunction()};
+                
+                var header = document.getElementById("myHeader");
+                var sticky = header.offsetTop;
+                
+                function myFunction() {
+                  if (window.pageYOffset > sticky) {
+                    header.classList.add("sticky");
+                  } else {
+                    header.classList.remove("sticky");
+                  }
+                }
+                </script>
         </body>

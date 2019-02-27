@@ -11,6 +11,17 @@
 
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 5;
+}
+
+.sticky + .Main-content {
+    padding-top: 102px;
+}
+
 .MyName {
     background-color:#4aaaa5;
     padding: 40px;
